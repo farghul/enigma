@@ -1,0 +1,10 @@
+/target
+*.csr
+*.exe
+*.key
+*.lock
+
+# Default desktop settings files
+.DS_Store
+Thumbs.db
+.idea
