@@ -34,3 +34,7 @@ From the *target/release* folder run:
 
 ** Generating a Key **
 ```
+
+## License
+
+Code is distributed under [The Unlicense](https://github.com/farghul/enigma/blob/main/LICENSE.md) and is part of the Public Domain.
