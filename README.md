@@ -12,7 +12,7 @@ Rust language installed to enable building of the source code.
 
 From the root project folder run:
 
-```
+``` zsh
 cargo build --release
    Compiling libc v0.2.150
    Compiling rustix v0.38.25
@@ -29,7 +29,7 @@ cargo build --release
 
 From the *target/release* folder run:
 
-``` console
+``` zsh
 ./enigma [cert name] [mmddyyy]
 
 ** Generating a Key **
