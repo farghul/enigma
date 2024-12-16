@@ -1,6 +1,6 @@
 # Enigma
 
-Create and modify Certificate Service Requests (CSR) for your web deployment needs.
+Create and modify Certificate Signing Requests (CSR) for your web deployment needs.
 
 ![Enigma](enigma.webp)
 
