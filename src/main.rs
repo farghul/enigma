@@ -5,7 +5,7 @@ use std::{
 use colored::Colorize;
 
 const HALT: &'static str = " Program halted ";
-const PLACE: &'static str = "/Users/byron/Documents/workbench/rust/enigma/";
+const PLACE: &'static str = "/Users/bstuike/Documents/github/enigma/keys/";
 
 
 fn main() {
@@ -78,8 +78,8 @@ fn about() {
 	println!("\n{}", "Usage:".yellow());
 	println!("  [program] [flag] [cert name] [mmddyyyy]");
 	println!("{}", "\nOptions:".yellow());
-	println!("{}      Create CSR with new key", " k,  key".green());
-	println!("{}    Create CSR with existing key", " n,  nokey".green());
+	println!("{}      Create CSR with a new key", " k,  key".green());
+	println!("{}    Create CSR with an existing key", " n,  nokey".green());
 	println!("{}     Help Information", " h,  help".green());
 	println!("{}", "\nExample:".yellow());
 	println!("  Pointing at your target/release folder, run:");

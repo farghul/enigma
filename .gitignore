@@ -1,5 +1,6 @@
 # Directories
 bin/
+keys/
 logs/
 target/
 test/

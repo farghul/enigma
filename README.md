@@ -10,6 +10,12 @@ Rust language installed to enable building of the source code.
 
 ## Build
 
+Before building the application, change the value of the `PLACE` constant to reflect your environment:
+
+``` rust
+const PLACE: &'static str = "/Users/bstuike/Documents/github/enigma/keys/";
+```
+
 From the root project folder run:
 
 ``` zsh
@@ -30,9 +36,15 @@ cargo build --release
 From the *target/release* folder run:
 
 ``` zsh
-./enigma [cert name] [mmddyyy]
+./enigma [flag] [cert name] [mmddyyyy]
+```
 
-** Generating a Key **
+## Flags
+
+``` zsh
+h, help      Help information
+k, key       Create CSR with a new key
+n, nokey     Create CSR with an existing key
 ```
 
 ## License
