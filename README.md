@@ -13,7 +13,7 @@ Rust language installed to enable building of the source code.
 Before building the application, change the value of the `PLACE` constant to reflect your environment:
 
 ``` rust
-const PLACE: &'static str = "/Users/bstuike/Documents/github/enigma/keys/";
+const PLACE: &'static str = "enigma/keys/";
 ```
 
 From the root project folder run:
