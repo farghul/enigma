@@ -1,7 +1,13 @@
 [package]
+# ...
 name = "enigma"
+description = "A short description of my package"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+readme = "README.md"
+repository = "https://github.com/farghul/enigma"
+license = "The Unlicense"
+license-file = "LICENSE.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -2,7 +2,8 @@ use colored::Colorize;
 use std::{env, process::Command};
 
 const HALT: &'static str = " Program halted ";
-const PLACE: &'static str = "~/Documents/github/enigma/keys/";
+const SELF: &'static str = "~/Documents/github/enigma/";
+const SSL: &'static str = "~/Documents/bitbucket/vm-nginx-conf/ssl/";
 
 fn main() {
     let supplied: Vec<String> = env::args().collect();
@@ -29,7 +30,13 @@ fn genkey(name: &String) {
     message("Generating a Key");
     execute(
         String::from("openssl"),
-        &["genrsa", "-out", &(name.to_owned() + ".key"), "4096"].to_vec(),
+        &[
+            "genrsa",
+            "-out",
+            &(SELF.to_owned() + "keys/" + &name + ".key"),
+            "4096",
+        ]
+        .to_vec(),
     );
 }
 
@@ -42,13 +49,13 @@ fn gencsr(name: &String, date: &String) {
             "req",
             "-new",
             "-key",
-            &(PLACE.to_owned() + &name + ".key"),
+            &(SELF.to_owned() + "keys/" + &name + ".key"),
             "-nodes",
             "-sha256",
             "-out",
-            &(PLACE.to_owned() + &name + ".csr"),
+            &(SELF.to_owned() + "csr/" + &name + ".csr"),
             "-config",
-            &(name.to_owned() + ".cnf"),
+            &(SSL.to_owned() + &name + "/" + &name + ".cnf"),
         ]
         .to_vec(),
     );
@@ -61,7 +68,7 @@ fn gencsr(name: &String, date: &String) {
             "-noout",
             "-verify",
             "-in",
-            &(PLACE.to_owned() + &name + "_" + &date + ".csr"),
+            &(SELF.to_owned() + "csr/" + &name + "_" + &date + ".csr"),
         ]
         .to_vec(),
     );

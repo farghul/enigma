@@ -1,5 +1,7 @@
 # Directories
 bin/
+cert/
+csr/
 keys/
 logs/
 target/
