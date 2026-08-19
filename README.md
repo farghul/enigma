@@ -2,23 +2,21 @@
 
 Create and modify Certificate Signing Requests (CSR) for your web deployment needs.
 
-![Enigma](enigma.webp)
-
 ## Prerequisites
 
-Rust language installed to enable building of the source code.
+Rust language installed to allow building from source.
 
 ## Build
 
 Before building the application, change the value of the `PLACE` constant to reflect your environment:
 
-``` rust
-const PLACE: &'static str = "enigma/keys/";
+```rust
+const PLACE: &'static str = "enigma/key/";
 ```
 
 From the root project folder run:
 
-``` zsh
+```zsh
 cargo build --release
    Compiling libc v0.2.150
    Compiling rustix v0.38.25
@@ -33,15 +31,15 @@ cargo build --release
 
 ## Run
 
-From the *target/release* folder run:
+From the _target/release_ folder run:
 
-``` zsh
+```zsh
 ./enigma [flag] [cert name] [mmddyyyy]
 ```
 
 ## Flags
 
-``` zsh
+```zsh
 h, help      Help information
 k, key       Create CSR with a new key
 n, nokey     Create CSR with an existing key
@@ -49,4 +47,4 @@ n, nokey     Create CSR with an existing key
 
 ## License
 
-Code is distributed under [The Unlicense](https://github.com/farghul/enigma/blob/main/LICENSE.md) and is part of the Public Domain.
+Code is distributed under [The Unlicense](https://github.com/bstuike/enigma/src/branch/main/LICENSE.md) and is part of the Public Domain.

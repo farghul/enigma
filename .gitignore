@@ -2,8 +2,8 @@
 bin/
 cert/
 csr/
-keys/
-logs/
+key/
+log/
 target/
 test/
 vendor/
