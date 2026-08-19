@@ -47,4 +47,4 @@ n, nokey     Create CSR with an existing key
 
 ## License
 
-Code is distributed under [The Unlicense](https://github.com/bstuike/enigma/src/branch/main/LICENSE.md) and is part of the Public Domain.
+Code is distributed under [The Unlicense](https://github.com/ekiuts/enigma/blob/main/LICENSE.md) and is part of the Public Domain.

@@ -4,7 +4,7 @@ description = "Create and modify Certificate Signing Requests"
 version = "0.1.0"
 edition = "2024"
 readme = "README.md"
-repository = "https://github.com/bstuike/enigma"
+repository = "https://github.com/ekiuts/enigma"
 license = "The Unlicense"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
